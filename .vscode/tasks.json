@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Tailwind CSS",
+      "type": "shell",
+      "command": "npx tailwindcss -i ./public/input.css -o ./public/dist/output.css --minify",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Server",
+      "type": "shell",
+      "command": "node server.js",
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}
